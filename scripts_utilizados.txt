@@ -1,0 +1,21 @@
+
+
+
+
+Get-ExecutionPolicy
+Set-ExecutionPolicy AllSigned
+Set-ExecutionPolicy Bypass -Scope Process
+choco install consoleZ
+choco install wget
+choco install virtualbox
+choco install vagrant
+choco install xming
+choco install atom
+vagrant up --provider virtualbox
+vagrant init ktr/mininet
+cd mininet
+vagrant ssh
+net
+pingall
+dump
+exit
